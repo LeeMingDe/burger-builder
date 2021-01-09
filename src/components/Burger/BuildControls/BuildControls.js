@@ -10,9 +10,6 @@ const controls = [
 ];
 
 const buildControls = (props) => (
-  // let controls = Object.keys(props.ingredients)
-  //   .map(igkey => <BuildControl key = {igkey} label = {igkey}/>)
-  //   .reduce((accumulator, item) => accumulator.concat(item), []);
     <div className = {classes.BuildControls}>
       <p>Current Price: <strong>{props.price.toFixed(2)}</strong></p>
       {controls.map(item => (
