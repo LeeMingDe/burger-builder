@@ -73,7 +73,7 @@ export const fetchOrders = () => {
           id:key
         });
       }
-      dispatch(fetchOrdersSuccess(fetchOrders));
+      dispatch(fetchOrdersSuccess(fetchedOrders));
     })
     .catch(err => {
       dispatch(fetchOrdersFail(err));
